@@ -1,11 +1,11 @@
-LinkedIn Post Automation Documentation
+## LinkedIn Post Automation Documentation
 The purpose of this document is to provide a clear overview and step-by-step explanation of the Make.com automation workflow that integrates Airtable, OpenAI, Google Docs, and LinkedIn.
-Workflow Overview
+### Workflow Overview
 This automation takes unprocessed post ideas from Airtable, generates LinkedIn content using OpenAI, logs the results in Google Docs, publishes to LinkedIn, and updates Airtable to mark completion.
 
- ![alt text](image.png)
+ ![alt text](images/image.png)
 
-The flow ensures:
+## The flow ensures:
 - No duplicate posts
 - AI-generated content is tracked
 - Posts are auto-published to LinkedIn
@@ -22,14 +22,15 @@ Integration with Make.com
 
 
 
-2. Workflow Steps
+## 2. Workflow Steps
 Step 1: Airtable (Search Records)
- 
- ![alt text](image-1.png)
 
- ![alt text](image-2.png)
+![alt text](images/image.png)
+
+ ![alt text](images/image-2.png)
  
- ![alt text](image-3.png)
+ ![alt text](images/image-3.png)
+
 Module: Airtable → Search Records
 Action: Finds all rows where is_processed = FALSE
 Purpose: Fetches unprocessed post entries
@@ -39,10 +40,10 @@ Module: Tools → Set Multiple Variables
 Action: Extracts variables (post_id, Notes, Type, etc.) from Airtable
 Purpose: Prepares the data to send to OpenAI
  
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 
-Step 3: OpenAI (Content Generation)
+## Step 3: OpenAI (Content Generation)
 Module: OpenAI (ChatGPT, Whisper, DALL·E) → Create a model response
 Action: Sends prompt (based on Airtable Notes & Type) to OpenAI
 Purpose: Generates a polished LinkedIn post draft
@@ -53,7 +54,9 @@ Steps to Generate OpenAI API Key and Add to Make.com
 •	In the top-right corner, click on your profile picture → View API Keys.
 •	Click Create new secret key.
 •	Copy the key that is generated (it starts with sk-...).
-Store it safely. You won’t be able to see it again after closing the popup.
+
+
+### Store it safely. You won’t be able to see it again after closing the popup.
 •	Add OpenAI API Key in Make.com
 •	Log in to your Make.com account.
 •	Open your Scenario where you’re using OpenAI.
@@ -62,29 +65,33 @@ Store it safely. You won’t be able to see it again after closing the popup.
 •	A pop-up will appear asking for your OpenAI API Key.
 •	Paste the key you copied from OpenAI.
  
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
-Step 4: Router (Branching the Workflow)
+## Step 4: Router (Branching the Workflow)
 The router splits the output into two paths:
- ![alt text](image-6.png)
-Path 1 Google Docs (Insert Content)
+
+ ![alt text](images/image-6.png)
+
+### Path 1 Google Docs (Insert Content)
 Module: Google Docs → Insert a Paragraph
 Action: Appends a row with: Post_ID, Created_At timestamp, AI-generated Result
 Purpose: Keeps a record of every post generated
-Create a Google Drive Connection
+## Create a Google Drive Connection
 1.	In the Connection field of the Google Docs module, click Add.
 2.	A popup will appear asking you to connect your Google Account.
 3.	Click Continue and log in with the Google account where your Google Docs files are stored.
 4.	Review the list of permissions (Make.com needs access to read/write your Google Drive and Docs).
 5.	Click Allow to grant access.
-Verify and Save
+
+## Verify and Save
 •	After authentication, the connection will be saved as a reusable Google Drive connection in Make.com.
 •	You can now select your Google Drive folder and Docs files inside the module.
  
- ![alt text](image-7.png)
- ![alt text](image-8.png)
+ ![alt text](images/image-7.png)
 
-Path 2 LinkedIn (Post Content)
+ ![alt text](images/image-8.png)
+
+### Path 2 LinkedIn (Post Content)
 Module: LinkedIn → Create a User Text Post
 Action: Publishes AI-generated content to LinkedIn
 Purpose: Posts directly on the LinkedIn account
@@ -94,16 +101,22 @@ Create LinkedIn Connection
 3.	Log in with your LinkedIn account credentials (personal or company page admin).
 4.	Review the requested permissions (Make.com needs access to post on your behalf and manage content).
 5.	Click Allow to grant permissions.
-![alt text](image-9.png)
+
+![alt text](images/image-9.png)
  
-Step 5: Airtable (Update Record)
+## Step 5: Airtable (Update Record)
 Module: Airtable → Update Record
-Action: Sets is_processed = TRUE for the post after it is successfully published
-![alt text](image-10.png)
-Purpose: Prevents reposting and allows new unprocessed entries to flow in the next automation run
-![alt text](image-11.png)
-![alt text](image-12.png)
-3. End-to-End Flow Diagram
+Action: Sets is_processed = TRUE for the post after it is successfully published.
+
+![alt text](images/image-10.png)
+
+Purpose: Prevents reposting and allows new unprocessed entries to flow in the next automation run.
+
+![alt text](images/image-11.png)
+
+![alt text](images/image-12.png)
+
+## 3. End-to-End Flow Diagram
 The automation flow is:
  
 1. Airtable (Search Records) 
@@ -113,7 +126,7 @@ The automation flow is:
    Path 1: Save to Google Docs
    Path 2: Publish to LinkedIn → Update Airtable (is_processed = TRUE)
 
-4. Key Benefits
+## 4. Key Benefits
 - Hands-free posting → Content is created and published automatically
 - Central tracking → Google Docs acts as a historical log
 - Error prevention → Airtable flag avoids duplicate posting
