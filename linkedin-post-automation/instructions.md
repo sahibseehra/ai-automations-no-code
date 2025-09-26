@@ -3,7 +3,7 @@ The purpose of this document is to provide a clear overview and step-by-step exp
 ### Workflow Overview
 This automation takes unprocessed post ideas from Airtable, generates LinkedIn content using OpenAI, logs the results in Google Docs, publishes to LinkedIn, and updates Airtable to mark completion.
 
- ![alt text](images/image.png)
+ ![alt text](Images/image.png)
 
 ## The flow ensures:
 - No duplicate posts
