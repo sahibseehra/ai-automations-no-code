@@ -1,0 +1,172 @@
+﻿post_id,Date,Type,Notes,is_processed
+1,8/15/2025,Industry Professional Session,"Key Points from the Session
+
+Session Focus
+• Deep dive into Cracking Data Science Interviews — preparation, performance, and role clarity.
+• Guidance tailored for aspirants in research, data analytics, business analytics, and data engineering.
+
+Interview Preparation Roadmap
+• Core Skills: Strong Python & SQL, solid grounding in math, stats, ML algorithms.
+• Portfolio: Go beyond coursework — publish meaningful projects on GitHub/Kaggle with real-world impact metrics (e.g., reduced churn %, revenue gains).
+• Coding Practice: Regularly use platforms like LeetCode/HackerRank; brush up on pandas, NumPy, scikit-learn.
+• Storytelling: Don’t just explain what you built — show why it mattered and what decisions it enabled.
+
+Interview Day Performance
+• Think aloud — communicate reasoning, assumptions, and alternate approaches.
+• Ask clarifying questions (metrics, targets, constraints) before jumping into solutions.
+• Translate complex models into simple stories for non-technical stakeholders.
+• Always link models to business value — answer the “so what?”.
+• End with smart, business-driven questions to show curiosity and data-driven thinking.
+• Sending a thank-you note to recruiter/hiring manager is often appreciated.
+
+Different Data Science Roles
+• Product Data Scientist – A/B testing, funnel analysis, improving user experience.
+• Business Data Scientist – Revenue, marketing, operations insights; dashboards & forecasting.
+• Research Data Scientist – Innovation, ML/NLP advances, publishing papers/patents.
+• Machine Learning Engineer – Deployment, scalability, MLOps (Docker, Kubernetes, cloud).
+
+Skills & Tools by Role
+• Product: A/B testing, SQL, Python, product metrics.
+• Business: SQL, dashboards, data viz, churn & propensity models.
+• Research: Deep math/ML, NLP/GenAI, C++/Python, research publications.
+• ML Engineer: Deployment pipelines, cloud (AWS/GCP/Azure), TensorFlow/PyTorch, CI/CD.
+
+Behavioral Interviews
+• Expect scenario-based questions (tight deadlines, missing team members, shifting priorities).
+• Show resilience, flexibility, and ability to pivot.
+• Demonstrate teamwork and cross-functional collaboration (with analysts, engineers, business leads).
+
+📌 Next Steps
+• Identify which type of data scientist you want to become and tailor prep accordingly.
+• Build impact-driven projects that show measurable outcomes.
+• Practice technical + storytelling balance.
+• Keep updating on latest AI/ML developments.
+",true
+2,8/20/2025,Community Session,"Wednesday session summary (21 august 2025) :-                                                                                                                                              Project Updates
+Kalpeesh: Grocery data scraping project; faced challenges with scale & performance. Plan to use cloud (Google VMs/AWS/Databricks) for faster, cheaper processing.
+
+Siza & Kamal: presented the idea of Customer review analyzer  project(cross-platform reviews, sentiment analysis, Power BI dashboards, real-time alerts).                                                                                                                                                                           Feedback: clarify problem statement, ensure uniqueness vs. Google tools, focus on scalability.
+
+Collaboration
+Kalpeesh to collaborate with Harman (DevOps), Vedanti & Parth (data engineering), others for data science support.
+Group proposed dedicated Web Scraping Learning Session (Selenium, APIs, BeautifulSoup, etc.).
+
+Key Suggestions from Sahil
+Speak up – share struggles for effective guidance.
+Always start presentations with a clear problem statement.
+Be concise – problem → target audience → solution → outcome.
+Leverage cloud/big data tools (Databricks, AWS Glue, Spark).
+Use community expertise – collaborate across skills (DevOps, data engineering, data science).
+Practice structured pitching – capture attention in first 20–30 seconds.
+",true
+3,8/22/2025,Industry Professional Session,"Key Points from the Session
+
+Session Focus
+• Understanding prompt engineering as communication with LLMs — an iterative process to get better results.
+• Explored not just prompts themselves but also model configurations (temperature, top-p, top-k, output length).
+• Hands-on demos in AI Studio and Colab, showing how prompts, context, and settings influence outputs.
+
+Prompting Techniques Covered
+• Zero-shot, One-shot, Few-shot – moving from no examples to multiple examples for better direction.
+• Role & System Prompting – assigning the model a role or setting system instructions to anchor context.
+• Contextual Prompting – provide relevant (not excessive) context for accuracy and efficiency.
+• Step-Back & Chain-of-Thought – encourage reasoning steps before answering directly.
+• Self-Consistency – running reasoning multiple times and trusting the majority output.
+• Tree of Thoughts – exploring multiple reasoning paths simultaneously for complex tasks.
+• ReAct (Reason + Act) – combining reasoning with external tools (e.g., search, code execution).
+• Code Prompting – using LLMs for code generation, debugging, and explanation.
+
+Best Practices
+• Be specific with word choice, tone, and structure.
+• Always state the format you want outputs in (JSON, tables, emojis, etc.).
+• Use constraints explicitly (what the model should and shouldn’t do).
+• Document prompt attempts — iterate, compare, and refine.
+• Balance creativity vs reliability with temperature/top-p settings depending on use case.
+
+Community Highlights
+• Great peer examples shared on AI Studio, Gemini Pro vs Flash, and API/Colab integration.
+• Real-world ideas surfaced — e.g., building a resume analyzer using in-context prompting.
+
+📌 Next Steps
+• Try experimenting with temperature and top-p settings in your own projects.
+• Explore advanced prompting patterns (Step-Back, ToT, ReAct) for complex tasks.
+• Consider documenting and sharing your prompt experiments in the community.
+",false
+4,9/9/2025,Community Session,"Activity
+The session was a “Future-Proofing Skill Tree” activity.
+Participants selected their target roles (e.g., Data Analyst, Data Scientist, Data Engineer, Product Manager, DevOps/Cloud, Software Engineer).
+Using a collaborative board, they mapped current and future-proof skills for each role.
+Breakout rooms were created for small group discussions, and then everyone regrouped to share insights.
+
+🔑 Skills Identified as Future-Proof
+Core Technical: SQL, Python, PyTorch, Spark, Big Data, Docker, Kubernetes, MCP (Microsoft Certified Professional / new cloud certifications).
+AI-Driven: Generative AI, Prompt Engineering, Conversational Analytics, AI Agents / Agentic AI.
+Business & Communication: Storytelling, Business Understanding, Critical Thinking, Problem-Solving.
+Data Management: Data Governance, Data Agents, Environment/Market Research tools (like Environix).
+
+💡Key Takeaways
+
+Think Beyond Obvious Skills – While SQL/Python are essential, focus on emerging tools like conversational analytics, AI agents, and GenAI.
+Conversational Analytics & Data Agents – Will play a big role in how analysts and businesses interact with data in the future.
+Storytelling & Business Understanding – These “evergreen” skills remain crucial even as AI evolves.
+Industry Relevance – Don’t just rely on ChatGPT for SQL or coding; understand how companies are actually implementing AI and automation in production.
+Stay Adaptive – Continuously watch job postings and industry trends to add the right future-proof skills.
+
+Practical Approach to AI agents– Start with smaller open-source models for Agentic AI projects, focus on design patterns before scaling to bigger cloud models.",false
+5,9/17/2025,Community Session,"Session Summary (17/09/2025)
+
+Garima (Scotiabank Journey)
+Shared her job success story, emphasizing aligning resume & answers with JD, preparing examples, and showing a can-do attitude.
+Highlighted the importance of community sessions (SQL, Excel, Power BI, behavioral prep) in building confidence.
+
+Prithviraj (Networking Experiences)
+Spoke about attending events (AWS Summit, Loblaws).
+Key lessons: Build LinkedIn connections, ask thoughtful questions, leverage events for future coffee chats, and confidence grows through repetition.
+
+Himanshu (Project Presentation)
+Presented his project, focusing on objectives, methodology, and learnings.
+Stressed that clear project storytelling and practice in presenting are vital for interviews.
+
+Mentor Sahil’s Guidance
+Wednesday Interview Session-
+Format will be tech mock interviews .
+Fill the details for Wednesday session in Excel sheet, check group announcements frequently!
+Reach out to another member to pair up for mock interviews on Wednesday.
+Treat this as a real interview simulation.",false
+6,9/19/2025,Industry Professional Session,"📌 Session Summary – AI-Powered Career Ascent by Rishabh (19/09/2025)
+
+Topic:
+Leveraging AI & LLMs to supercharge the job search process — from resumes to interviews and negotiation.
+
+Key Tools & Takeaways:
+The Chameleon Resume
+Use AI for keyword optimization and ATS alignment.
+Convert responsibilities into impact-driven STAR stories.
+Craft tailored professional summaries for each role.
+
+The Compelling Cover Letter
+Go beyond generic templates.
+Personalize by connecting your projects/skills to the company’s needs.
+Research announcements/blogs to show you’ve done your homework.
+
+AI-Powered Networker
+Use AI for LinkedIn profile analysis of target contacts.
+Prepare thoughtful coffee chat questions.
+Write personalized outreach messages referencing shared interests or achievements.
+
+The Interview Simulator
+Practice behavioral questions with STAR method.
+Simplify explanations of technical concepts & debug snippets.
+Generate smart questions for interviewers to show proactivity.
+
+The Closer – Follow-up & Negotiation
+Write memorable thank-you emails referencing conversation highlights.
+Practice negotiation with role-plays: “I have an offer of $X, let’s discuss.”
+Build confidence and scripting for salary discussions.
+
+Core Concepts Shared:
+AI fundamentals: AI → ML → Deep Learning → LLMs.
+Practical terms: Context Window, Prompting, RAG (Retrieval-Augmented Generation).
+
+Stats: 46% of job seekers already use AI, and 69% report higher interview calls when used effectively.
+",false
